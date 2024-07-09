@@ -11,11 +11,13 @@
 function getRandomImage() {
     var num = Math.floor( Math.random() * 5);
     var img = ImageArray[num];
-    document.getElementById("randImage").innerHTML = ('<img src="' + 'imgs/' + img + '" width="600px">')
+    document.getElementById("randImage").innerHTML = ('<img src="' + 'imgs/' + img + '" height="900px">')
 
   }
   </script>
 </head>
   <body onload="getRandomImage()">
-  <div id="randImage"></div>
+      <center>
+          <div id="randImage"></div>
+      </center>
 </body>
