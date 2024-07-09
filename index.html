@@ -1,5 +1,21 @@
-<html>
-  <body>
-    <img src="imgs/20240709_210600.jpg">
-  </body>
-</html>
+<head>
+    <script type="text/javascript">
+    ImageArray = new Array();
+    ImageArray[0] = '20240709_210600.jpg';
+    ImageArray[1] = '20240709_210646.jpg';
+    ImageArray[2] = '20240709_210735.jpg';
+    ImageArray[3] = '20240709_210908.jpg';
+    ImageArray[4] = '20240709_211102.jpg';
+
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 5);
+    var img = ImageArray[num];
+    document.getElementById("randImage").innerHTML = ('<img src="' + 'imgs/' + img + '" width="600px">')
+
+  }
+  </script>
+</head>
+  <body onload="getRandomImage()">
+  <div id="randImage"></div>
+</body>
